@@ -1,19 +1,19 @@
 stages:
-      - Build
-      - test
+  - Build
+  - test
 Build:
-      image: alpine
-      stage: Build
-      script: |
-          mkdir Build
-          ls
-          touch Build.txt
-          ls
+  image: alpine
+  stage: Build
+  script: |
+    mkdir Build
+    ls
+    touch Build.txt
+    ls
 test:
-      image: alpine
-      stage: test
-      script: |
-          mkdir test
-          ls
-          touch test.txt
-          ls
+  image: alpine
+  stage: test
+  script: |
+    mkdir test
+    ls
+    touch test.txt
+    ls
