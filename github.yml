@@ -1,13 +1,13 @@
 stages:
-  - Build
+  - build
   - test
 Build:
   image: alpine
-  stage: Build
+  stage: build
   script: |
-    mkdir Build
+    mkdir build
     ls
-    touch Build.txt
+    touch build.txt
     ls
 test:
   image: alpine
